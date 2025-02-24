@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload - Study Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">Study Platform</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Upload Study Material</h1>
+    <form id="uploadForm">
+      <input type="text" id="title" placeholder="Title" required>
+      <textarea id="description" placeholder="Description" required></textarea>
+      <input type="file" id="file" required>
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('uploadForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const title = document.getElementById('title').value;
+      const description = document.getElementById('description').value;
+      alert(`Uploaded: ${title}`);
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

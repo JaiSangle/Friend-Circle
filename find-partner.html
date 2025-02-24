@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Study Partner - Study Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">Study Platform</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Find Study Partner</h1>
+    <form id="interestForm">
+      <input type="text" id="interests" placeholder="Enter your interests (e.g., Math, Programming)" required>
+      <button type="submit">Find Partners</button>
+    </form>
+
+    <div id="partnerResults" class="partner-grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
